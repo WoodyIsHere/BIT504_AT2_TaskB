@@ -170,16 +170,17 @@ private void paintWinner(Graphics g) {
      }
  
      @Override
+     // changed the velocity of the paddle from 4 to 8.
      public void keyPressed(KeyEvent event) {
          if(event.getKeyCode() == KeyEvent.VK_W) {
-             paddle1.setyVelocity(-4);
+             paddle1.setyVelocity(-8);
          } else if(event.getKeyCode() == KeyEvent.VK_S) {
-             paddle1.setyVelocity(4);
+             paddle1.setyVelocity(8);
          }
          if(event.getKeyCode() == KeyEvent.VK_UP) {
-             paddle2.setyVelocity(-4);
+             paddle2.setyVelocity(-8);
         } else if(event.getKeyCode() == KeyEvent.VK_DOWN) {
-             paddle2.setyVelocity(4);
+             paddle2.setyVelocity(8);
          } 
      }
  
